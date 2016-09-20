@@ -1,0 +1,18 @@
+<section id="wallet">
+	<div class="row">
+		<h1 ng-cloak>Balance: {{ balance.value }} <span ng-show="balance.value != 0">{{ asset.code }}</span></h1>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12">
+			<table class="table table-responsive">
+				<caption>Most recent transactions:</caption>
+				<tr ng-repeat="tx in history.value | limitTo:10">
+					<td>{{tx.counterparty}}</td>
+					<td>{{tx.amount | number}}</td>
+					<td>{{tx.date}}</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</section>

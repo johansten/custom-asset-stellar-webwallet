@@ -1,0 +1,140 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* lato-300 - latin */
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 300;
+	src: url('fonts/lato-v11-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+	url('fonts/lato-v11-latin-300.woff') format('woff') /* Modern Browsers */
+}
+/* lato-regular - latin */
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/lato-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+	url('fonts/lato-v11-latin-regular.woff') format('woff') /* Modern Browsers */
+}
+
+body {
+	padding: 0;
+	font-family: Lato,​Helvetica,​Arial,​Geneva,sans-serif;
+	font-size: 1.5em;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  margin-bottom: 10px;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+.navbar-nav.navbar-right {
+	margin-right: -30px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+.page-header h1 {
+	font-size: 4em;
+	font-weight: 300;
+	margin: 10px 0;
+	text-align: center;
+}
+
+.page-header h2 {
+	font-size: 1.4em;
+	font-weight: 300;
+	line-height: 130%;
+	margin: 30px 0 20px;
+	text-align: left;
+}
+
+#wallet	h1 {
+	font-size: 3em;
+	font-weight: 300;
+	line-height: 130%;
+	margin: 30px 0 20px;
+	text-align: center;
+}
+
+#wallet	table > tbody > tr > td:nth-child(2),
+#wallet	table > tbody > tr > td:nth-child(3) {
+	text-align: right;
+}
+
+/* */
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
+}
+
+/* remove spinners on number inputs */
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+/*    max-width: 730px;
+*/
+	  max-width: 960px;
+}
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}

@@ -1,0 +1,32 @@
+<div class="header">
+	<div class="navbar navbar-default" role="navigation">
+		<div ng-controller="NavbarCtrl" class="container">
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" ng-init="isCollapsed=true" ng-click="isCollapsed=!isCollapsed">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a ng-hide="isLoggedIn()" class="navbar-brand" href="/">Wallet</a>
+				<a ng-show="isLoggedIn()" class="navbar-brand" href="/home">Wallet</a>
+			</div>
+
+			<div class="navbar-collapse" ng-class="{collapse: isCollapsed}">
+				<ul ng-hide="isLoggedIn()" class="nav navbar-nav navbar-right">
+					<li><a ng-href="/signup">SIGN UP</a></li>
+					<li><a ng-href="/login">LOG IN</a></li>
+				</ul>
+				<ul ng-show="isLoggedIn()" class="nav navbar-nav navbar-right">
+					<li><a ng-href="/home">HOME</a></li>
+					<li><a ng-href="/send">SEND</a></li>
+					<li><a ng-href="/receive">RECEIVE</a></li>
+					<li><a href="#" ng-click="logout()">LOG OUT</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</div>

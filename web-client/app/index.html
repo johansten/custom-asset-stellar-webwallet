@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ID Keys</title>
+		<base href="/">
+
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+
+		<!-- build:css(.) styles/vendor.css -->
+		<!-- bower:css -->
+		<link rel="stylesheet" href="bower_components/bootstrap-css-only/css/bootstrap.css" />
+		<!-- endbower -->
+		<!-- endbuild -->
+
+		<!-- build:css(.tmp) styles/main.css -->
+		<link rel="stylesheet" href="styles/main.css">
+		<!-- endbuild -->
+	</head>
+
+	<body ng-app="app">
+		<!--[if lte IE 8]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/"> upgrade your browser</a> to improve your experience.</p><![endif]-->
+
+		<div ng-include="'views/navbar.html'"></div>
+		<div class="container">
+			<div ng-view=""></div>
+		</div>
+
+		<div class="footer">
+			<div class="container">
+				<p class="pull-right"><span style="color:#D60000" class="glyphicon glyphicon-heart"></span> futuretense.io</p>
+			</div>
+		</div>
+
+		<!-- build:js(.) scripts/vendor.js -->
+		<!-- bower:js -->
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/angular-route/angular-route.js"></script>
+		<script src="bower_components/angular-touch/angular-touch.js"></script>
+		<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+		<script src="bower_components/stellar-sdk/stellar-sdk.min.js"></script>
+		<!-- endbower -->
+		<!-- endbuild -->
+
+		<!-- build:js({.tmp,app}) scripts/scripts.js -->
+		<script src="scripts/app.js"></script>
+		<script src="scripts/controllers/home.js"></script>
+		<script src="scripts/controllers/landing.js"></script>
+		<script src="scripts/controllers/login.js"></script>
+		<script src="scripts/controllers/navbar.js"></script>
+		<script src="scripts/controllers/recv.js"></script>
+		<script src="scripts/controllers/send.js"></script>
+		<script src="scripts/controllers/signup.js"></script>
+		<script src="scripts/directives/valid-address.js"></script>
+		<script src="scripts/directives/valid-seed.js"></script>
+		<script src="scripts/services/balance.js"></script>
+		<script src="scripts/services/history.js"></script>
+		<script src="scripts/services/wallet.js"></script>
+		<!-- endbuild -->
+	</body>
+</html>
